@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/cp_style.css">
+</head>
+<body>
+<div class="section">
+	<div class="container">
+		<div class="card"><img src="img/image3d.png" alt=""></div>
+		<div class="card"><img src="img/image3d.png" alt=""></div>
+		<div class="card"><img src="img/image3d.png" alt=""></div>
+		<div class="card"><img src="img/image3d.png" alt=""></div>
+		<div class="card"><img src="img/image3d.png" alt=""></div>
+		<div class="card"><img src="img/image3d.png" alt=""></div>
+	</div>
+</div>
+</body>
+<script>
+	var container = document.querySelector('.container');
+	container.addEventListener('click', function(){
+		if(container.classList.contains('container-origin')){
+			container.classList.remove('container-origin');
+		}else{
+			container.classList.add('container-origin');
+		}
+	});
+</script>
+</html>
