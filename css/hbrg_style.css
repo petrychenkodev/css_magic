@@ -1,5 +1,6 @@
 body{
 	font-family: sans-serif;
+	outline: none;
 }
 .section{
 	height: 100vh;
@@ -9,8 +10,8 @@ body{
 	align-items: center;
 }
 .menu-btn{
-	width: 500px;
-	height: 500px;
+	width: 50px;
+	height: 50px;
 	display: block;
 	background-color: #fff;
 	border-radius: 50%;
@@ -21,11 +22,11 @@ body{
 .menu-btn span{
 	position: absolute;
 	top: 50%;
-	margin-top: -10px;
+	margin-top: -1px;
 	left: 50%;
-	margin-left: -100px;
-	width: 200px;
-	height: 20px;
+	margin-left: -10px;
+	width: 20px;
+	height: 2px;
 	background-color: #222;
 }
 .menu-btn span::before,
@@ -35,18 +36,49 @@ body{
 	transition: 1s;
 }
 .menu-btn span::before{
-	transform: translateY(50px);
+	transform: translateY(5px);
 }
 .menu-btn span::after{
-	transform: translateY(-50px);
+	transform: translateY(-5px);
 }
 .active span::after{
 	transform: rotate(35deg);
 	transform-origin: left bottom;
-	width: 100px;
+	width: 10px;
 }
 .active span::before{
 	transform: rotate(-35deg);
 	transform-origin: left top;
-	width: 100px;
+	width: 10px;
+}
+.menu-block{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	overflow: hidden;
+}
+.link{
+	display: inline-block;
+	text-decoration: none;
+	color:#7b1fa2;
+	margin-right: 20px;
+}
+.menu-nav{
+	transition: 0.5s;
+	transform-origin: right center;
+	transform: scaleX(0) translateX(20%);
+	opacity: 0;
+	background-color: #fff;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 40px 0 20px;
+	margin-right: -25px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+.menu-nav-active{
+	transform: scaleX(1) translateX(0);
+	opacity: 1;
 }
