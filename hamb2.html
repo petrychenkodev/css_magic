@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamburger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/hamb2_style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="section">
+			<div class="menu-block">
+				<a href="#" class="menu-btn">
+					<span></span>
+				</a>
+
+				<nav class="menu">
+					<a href="#"><i class="fab fa-css3-alt"></i></i></a>
+					<a href="#"><i class="fab fa-sass"></i></a>
+					<a href="#"><i class="fab fa-less"></i></a>
+				</nav>	
+			</div>	
+	</div>
+</body>
+
+<script>
+	var mbtn = document.querySelector('.menu-btn'),
+		menu = document.querySelector('.menu');
+
+	mbtn.addEventListener('click', function(e){
+		e.preventDefault();
+		this.classList.toggle('active');
+		menu.classList.toggle('menu_active');
+	});
+</script>
+
+</html>
