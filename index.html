@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="menu">
+			<a href="#" class="menu-btn"></a>
+			<nav class="menu-list">
+				<a href="#">Main</a>
+				<a href="#">News</a>
+				<a href="#">Contacts</a>
+				<a href="#">Portfolio</a>
+			</nav>
+		</div>
+		<div class="content">
+			<section class="main">
+				<h2>Main</h2>
+			</section>
+			<section class="news">
+				<h2>News</h2>
+			</section>
+			<section class="contacts">
+				<h2>Contacts</h2>
+			</section>
+			<section class="portfolio">
+				<h2>Portfolio</h2>
+			</section>
+		</div>
+	</div>
+</body>
+
+<script>
+	var btn = document.querySelector('.menu-btn');
+	var menu = document.querySelector('.menu');
+	var content = document.querySelector('.content');
+	btn.addEventListener('click', function(e){
+		e.preventDefault();
+		menu.classList.toggle('menu-active');
+		content.classList.toggle('content-active');
+	});
+</script>
+
+</html>
